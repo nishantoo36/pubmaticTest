@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.309893">
+<testcase classname="SelectTheLowestValue" name="Test Validation for invalid UserName with correct format" time="10.309893">
+<system-out><![CDATA[When user open "https://www.easemytrip.com/"................................passed
+When user First Select Location from default values.........................passed
+Then user select date as "09/09/2020".......................................passed
+Then It should suggest the date which is lowest in list and nearest to the given date.passed
+]]></system-out>
+</testcase>
+</testsuite>

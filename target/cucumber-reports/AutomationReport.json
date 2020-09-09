@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2076351142,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Logging(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3448756,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test Validation for invalid UserName with correct format",
+        "description": "",
+        "id": "selectthelowestvalue;test-validation-for-invalid-username-with-correct-format",
+        "after": [
+          {
+            "result": {
+              "duration": 55638,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 103103316,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4910675427,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user open \"https://www.easemytrip.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.easemytrip.com/",
+                  "offset": 11
+                }
+              ],
+              "location": "PreconditionSteps.userOpen(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Select location from default list\n",
+              "Location selected successfully from default list\n"
+            ],
+            "result": {
+              "duration": 337265694,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user First Select Location from default values",
+            "match": {
+              "location": "DateSelectorPageSteps.userFirstSelectLocationFromDefaultValues()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "User want to select date as 09/09/2020\n"
+            ],
+            "result": {
+              "duration": 2878446996,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user select date as \"09/09/2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "09/09/2020",
+                  "offset": 21
+                }
+              ],
+              "location": "DateSelectorPageSteps.userSelectDateAs(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "\n Suggest the nearest minimum date as below : \n\n",
+              "Nearest minimum rate date for months is 12/09/2020 and rate is 3242\n"
+            ],
+            "result": {
+              "duration": 545957,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "It should suggest the date which is lowest in list and nearest to the given date",
+            "match": {
+              "location": "DateSelectorPageSteps.itShouldSuggestTheDateWhichIsLowestInListAndNearestToTheGivenDate()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "SelectTheLowestValue",
+    "description": "",
+    "id": "selectthelowestvalue",
+    "keyword": "Feature",
+    "uri": "UITest/SelectTheLowestValue.feature"
+  }
+]
