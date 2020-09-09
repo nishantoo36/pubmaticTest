@@ -25,9 +25,6 @@ public class DateSelectorPageActions extends SeleniumUtility {
     @FindBy(id = "ddate")
     WebElement departureDate;
 
-    @FindBy(xpath = "//div[@id='error']/p")
-    WebElement errorMessage;
-
     @FindBy(id = "img2Nex")
     WebElement nextMonthSelector;
 
